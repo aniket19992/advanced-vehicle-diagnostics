@@ -1,0 +1,10 @@
+cat > .gitmessage.txt <<EOF  
+[MODULE] Short description  
+
+Details:  
+- What changed  
+- Why it matters  
+- Testing done  
+
+Signed-off-by: Your Name <email@example.com>  
+EOF  
