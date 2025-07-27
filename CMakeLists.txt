@@ -1,13 +1,12 @@
-cmake_minimum_required(VERSION 3.12)  
-project(AdvancedVehicleDiagnostics VERSION 1.0.0 LANGUAGES CXX)  
+cmake_minimum_required(VERSION 3.10)
+project(AdvancedVehicleDiagnostics)
 
-# C++17 required  
-set(CMAKE_CXX_STANDARD 17)  
-set(CMAKE_CXX_STANDARD_REQUIRED ON)  
+set(CMAKE_CXX_STANDARD 17)
 
-# Include directories  
-include_directories(include)  
+# 🧪 GoogleTest
+find_package(GTest REQUIRED)
 
-# Add subdirectories  
-add_subdirectory(src)  
-add_subdirectory(tests)  
+enable_testing()
+
+add_subdirectory(src)
+add_subdirectory(tests)
